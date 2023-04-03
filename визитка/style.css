@@ -1,0 +1,41 @@
+.container {
+    background-color: black;
+    width: 80%;
+    height: 70vh;
+    margin: 1px;
+    position: absolute;
+    cursor: pointer;
+    transition: 1s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.full {
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    transform: translateX(0px) translateY(0px);
+
+}
+
+.one {
+
+    background-color: rgb(132, 140, 36);
+    transform: translateX(50px) translateY(-50px);
+}
+
+.two {
+
+    z-index: 1;
+    background-color: aqua;
+
+}

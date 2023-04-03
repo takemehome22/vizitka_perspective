@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div onclick="one1()" class="container one">
+
+    </div>
+    <div onclick="two1()" class="container two">
+
+    </div>
+    <script>
+
+        const full = document.querySelector('full');
+        const one = document.querySelector('.one');
+        const two = document.querySelector('.two');
+        let helpa = true;
+        let helpa2=true;
+        function one1() {
+            if (helpa == true) {
+                one.classList.add('full');
+                helpa = false;
+            } else {
+
+                one.classList.remove('full')
+                helpa = true;
+            }
+
+
+        }
+        function two1() {
+            if (helpa2 == true) {
+                two.classList.add('full');
+                helpa2 = false;
+            } else {
+
+                two.classList.remove('full')
+                helpa2 = true;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
