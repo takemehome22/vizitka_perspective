@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="main">
+    <div class="block first">
+<!-- тут будет находится все что выше карточек -->
+    </div>
+    <div class="block second">
+
+        <div onclick="one1()" class="container one size">
+    
+        </div>
+        <div onclick="two1()" class="container two ">
+    
+        </div>
+    </div>
+
+</div>
+
+    <script>
+        function random(x, y) {
+            return (x + (Math.random() * (y - x)));
+        }
+        for (let i = 0; i < 200; i++) {
+            document.body.innerHTML += '<div class="star" style="animation-duration:' + random(10, 50) + 's;  top:' + random(0, 100) + '%;left:' + random(0, 100) + '%;"></div>'
+        }
+        const container = document.querySelectorAll('.container');
+        const full = document.querySelector('full');
+        const one = document.querySelector('.one');
+        const two = document.querySelector('.two');
+        let helpa = true;
+        let helpa2 = true;
+        function one1() {
+            if (helpa == true) {
+                one.classList.add('full');
+                helpa = false;
+                one.style.bottom = '0%';
+                zIndexOne();
+                containerOff()
+            } else {
+                one.classList.remove('full');
+                one.classList.remove('size');
+                two.classList.add('size');
+                one.style.bottom = '-100%';
+                helpa = true;
+
+                zIndexOne();
+                containerOn()
+            }
+
+        }
+        function two1() {
+            if (helpa2 == true) {
+                two.classList.add('full');
+                helpa2 = false;
+                two.style.bottom = '0%';
+                zIndexTwo();
+                containerOff()
+            } else {
+                two.classList.remove('full');
+                two.classList.remove('size');
+                one.classList.add('size');
+                helpa2 = true;
+                two.style.bottom = '-100%';
+
+                zIndexTwo();
+                containerOn()
+            }
+
+        }
+        function zIndexOne() {
+            two.style.zIndex = '2';
+            one.style.zIndex = '3';
+        }
+        function zIndexTwo() {
+            one.style.zIndex = '2';
+            two.style.zIndex = '3';
+        }
+        function containerOff() {
+            container.forEach(element => {
+                element.style.transform = 'rotateX(0deg)';
+
+            });
+        }
+        function containerOn() {
+
+            container.forEach(element => {
+                element.style.transform = 'rotateX(5deg)';
+
+            });
+        }
+    </script>
+</body>
+
+</html>
