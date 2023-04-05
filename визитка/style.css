@@ -10,6 +10,22 @@
     z-index: -1;
 }
 
+p {
+    display: flex;
+    justify-content: center;
+    color: rgb(0 173 255);
+    font-size: 25px;
+    margin-top: -15px;
+}
+
+h1 {
+    color: azure;
+}
+
+h2 {
+    color: azure;
+}
+
 @keyframes identifier {
     0% {
         transform: scale(1);
@@ -48,10 +64,10 @@
     cursor: pointer;
     transition: 1s;
     transform: rotateX(5deg);
-
-    bottom: -100%;
-    border-radius: 25px;
     border: 3px solid black;
+    border-radius: 25px;
+    bottom: -100%;
+    padding: 25px;
 }
 
 .block {
@@ -70,6 +86,7 @@
 .main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -82,14 +99,15 @@ body {
 }
 
 .full {
-    width: 100% !important;
-    height: 100vh !important;
+    width: 96% !important;
+    height: 94vh !important;
 
 }
 
 .one {
     z-index: 2;
     background-color: rgb(97, 97, 93);
+
 }
 
 .size {
