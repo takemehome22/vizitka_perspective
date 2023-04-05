@@ -9,6 +9,50 @@
     animation: identifier infinite alternate;
     z-index: -1;
 }
+.first{
+    display: flex;
+    justify-content: center;
+}
+.mainmenu{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    bottom: 70%;
+    justify-content: center;
+    gap: 20%
+}
+ul{
+    padding-inline-start: 0px;
+
+}
+li{
+    text-align: center;
+    height: 30px;    
+}
+.menu {
+    font-size: 30px;
+    color: rgb(0 173 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color: rgb(85, 85, 85);
+    margin-left: 45px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.column {
+    gap: 10%;
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
 
 p {
     display: flex;
@@ -91,6 +135,7 @@ h2 {
 }
 
 body {
+
     height: 100vh;
     overflow: hidden;
     margin: 0px;
