@@ -9,11 +9,14 @@
     animation: identifier infinite alternate;
     z-index: -1;
 }
-.first{
+
+.first {
     display: flex;
     justify-content: center;
 }
-.mainmenu{
+
+.mainmenu {
+    border: 3px solid rgb(0, 81, 119);
     position: absolute;
     display: flex;
     width: 100%;
@@ -22,22 +25,23 @@
     justify-content: center;
     gap: 20%
 }
-ul{
-    padding-inline-start: 0px;
 
+ul {
+    padding-inline-start: 0px;
 }
-li{
+li {
     text-align: center;
-    height: 30px;    
+    height: 30px;
 }
+
 .menu {
     font-size: 30px;
     color: rgb(0 173 255);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
-    color: rgb(85, 85, 85);
+    color: rgb(215, 211, 211);
     margin-left: 45px;
     margin-bottom: 20px;
     text-decoration: none;
@@ -96,10 +100,6 @@ h2 {
         opacity: .9;
     }
 }
-
-
-
-/* тут ничего не трогать(везде всмысле) */
 .container {
     background-color: black;
     width: 80%;
@@ -146,6 +146,7 @@ body {
 .full {
     width: 96% !important;
     height: 94vh !important;
+    transform: rotateX(0deg) !important;
 
 }
 
@@ -161,7 +162,7 @@ body {
 }
 
 .two {
-
+    bottom: 0%;
     z-index: 3;
     background-color: rgb(50, 51, 51);
 
